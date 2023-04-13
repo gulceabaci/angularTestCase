@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  font-family: 'Montserrat', sans-serif;
+}
+.stars {
+  width: 12px;
+  margin-right: 5px;
+}
+.itemTitle {
+  text-align: left;
+  margin-left: 2%;
+  font-family: auto;
+  margin-top: 0.4rem; 
+  margin-bottom: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15pt;
+}
+.filterButton {
+  background-color: #f1f1f1;
+}
+.sonuclar {
+  color: #1a1824eb;
+  font-weight: bolder;
+  font-size: 10pt;
+
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 8px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-size: 12px;
+  background-color: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-container input::placeholder {
+  color: #aaa;
+}
+
+.search-container span {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.search-container span:first-child {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.box {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 11px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.box-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 7px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -24px;
+  font-size: 12px;
+
+}
+
+.box-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box-bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sub p {
+  margin: 5px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cesit {
+  color: #1A1824;
+  opacity: 50%;
+  text-transform: capitalize;
+}
+
+.images {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.itemImg{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.rate {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  background-color: #B70014;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 3rem;
+  text-align: center;
+}

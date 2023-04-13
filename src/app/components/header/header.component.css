@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  color: #040405;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+}
+
+.sol-menü, .sağ-menü{
+  flex-basis: 12%;
+  margin: 10px;
+  text-align: center;
+}
+.orta-yazı{
+  flex-basis: 12%;
+  margin-left: 5%;
+  text-align: center;
+} 
+ 
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sol-menü, .orta-yazı, .sağ-menü {
+    flex-basis: auto;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="search-container">
+    <img class="search-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" width="15px" />
+    <input type="text" placeholder="Mekan ara">
+    <img class="filterButton" src="https://w7.pngwing.com/pngs/403/20/png-transparent-computer-icons-filter-miscellaneous-angle-rectangle.png" width="20px" />
+</div>
+
+  <p class="sonuclar">Sonuçlar</p>
+  <div *ngFor="let item of feedData" class="box">
+    <div *ngFor="let image of item.images" class="item-box">
+      <div class="box-header">
+        <div class="images">
+          <div class="rate"><img class="stars" src="../../../assets/stars.png" />{{ item.storeInfo.rate }}</div>
+          <img class="itemImg" [src]="image.base64" [alt]="image.itemType" />
+        </div>
+        <h2 class="itemTitle">{{ item.title }}</h2>
+      </div>
+      <div class="sub">
+        <div class="box-bottom-left">
+          <p class="cesit" >{{item.type}}</p>
+          <p >3 Km yakınında</p>
+        </div>
+        <div class="box-bottom-right">
+          <p class="cesit"> <img src="../../../assets/shoppingBasket.png"/> Min. Sipariş Tutarı: ₺{{ item.storeInfo.minOrderPrice }}</p>
+          <div *ngFor="let open of item.storeInfo.workingHours" class="hours">
+           <span style="color: #34C47C;">İşletme Açık </span> 
+           <span class="cesit"> {{ open.open }} / {{ open.close }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
